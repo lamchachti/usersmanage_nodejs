@@ -1,0 +1,14 @@
+{
+  "name": "usersmanage",
+  "version": "1.0.0",
+  "description": "A app to save and manage a group of users on database using node.js and express.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ayoub",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
