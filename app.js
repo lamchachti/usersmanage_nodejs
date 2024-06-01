@@ -51,7 +51,7 @@ app.delete('/delete/:id',(req,res)=>{
 })
 
 
-mongoose.connect('mongodb+srv://ayu769350:3KtHlxoeL6XWSe28@cluster0.mdawdry.mongodb.net/all-data?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('url-to-db')
         .then(()=>{
             app.listen(port, () => {
                 console.log(`Server lestening on http://localhost:${port}`);
