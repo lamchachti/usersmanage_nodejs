@@ -1,0 +1,15 @@
+h1{
+    text-decoration: underline;
+}
+input{
+    width: 400px;
+}
+.container{
+    margin: 0;
+}
+.body-header{
+    margin-bottom: 30px;
+}
+.user-action{
+    background-color: red;
+}

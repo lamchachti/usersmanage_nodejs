@@ -1,0 +1,39 @@
+
+
+    </div>
+      <% if (users.length > 0) { %>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nomre completo</th>
+                <th scope="col">Edad</th>
+                <th scope="col">País</th>
+                <th scope="col">Status</th>
+                <th scope="col">Aciones</th>
+              </tr>
+            </thead>
+            <tbody>
+        <% users.forEach(user => { %>
+            
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><%= user.firstname+' '+ user.firstfamilyname %></td>
+                        <td>23</td>
+                        <td><%=user.country%></td>
+                        <td><%=user.status?'active':'inactive'%></td>
+                        <td style="display:flex;justify-content:space-between;">
+                            <a class="btn btn-primary" href="#" role="button">rectificar</a>
+                            <form action="/delete/665ace92b60fc388bed17fbf?_method=DELETE" method="post">
+                                <button class="btn btn-danger" type="submit">Borrar</button>
+                            </form>
+                        </td>
+                    </tr>
+            <% }); %>
+            </tbody>
+        </table>
+            <% } else { %>
+            <p>No users</p>
+            <% } 
+        %>
+
